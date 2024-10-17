@@ -1,15 +1,15 @@
 //your JS code here. If required.
-const Promise1 = new Promise1((resolve,reject) =>
+const Promise1 = new Promise((resolve,reject) =>
 	setTimeout(() => {
 		console.log("Promise1 resolved");
 	},1000)
 );
-const Promise2 = new Promise2((resolve,reject) =>
+const Promise2 = new Promise((resolve,reject) =>
 	setTimeout(() => {
 		console.log("Promise1 resolved");
 	},2000)
 );
-const Promise3 = new Promise3((resolve,reject) =>
+const Promise3 = new Promise((resolve,reject) =>
 	setTimeout(() => {
 		console.log("Promise1 resolved");
 	},1500)
