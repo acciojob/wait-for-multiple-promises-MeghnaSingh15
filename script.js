@@ -16,5 +16,7 @@ const Promise3 = new Promise((resolve,reject) =>
 );
 Promise.all([Promise1, Promise2, Promise3])
 .then(() => {
+	const loadingRow = document.getElementById('loadingRow');
+    loadingRow.remove();
 	console.log("All promises resolved");
 });
