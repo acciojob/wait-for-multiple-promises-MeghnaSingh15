@@ -6,17 +6,17 @@ const Promise1 = new Promise((resolve,reject) =>
 );
 const Promise2 = new Promise((resolve,reject) =>
 	setTimeout(() => {
-		console.log("Promise1 resolved");
+		console.log("Promise2 resolved");
 	},2000)
 );
 const Promise3 = new Promise((resolve,reject) =>
 	setTimeout(() => {
-		console.log("Promise1 resolved");
+		console.log("Promise3 resolved");
 	},1500)
 );
 Promise.all([Promise1, Promise2, Promise3])
 .then(() => {
-	const loadingRow = document.getElementById('loadingRow');
+	const loadingRow = document.getElementById('tr#loading');
     loadingRow.remove();
 	console.log("All promises resolved");
 });
